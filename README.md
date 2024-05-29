@@ -12,8 +12,9 @@
 - Must be careful things
              - Don't open the file without internet
 - If you want to run this file, you first
-         - Download this file .
+         - Download this file or git clone this repository .
          - Open this file on code editer as you like .
+         - type composer install
          - Install npm and xmapp .
          - Open apache server and sql .
          - Then run this command ' php artisan serve '
