@@ -14,12 +14,12 @@
 - If you want to run this file, you first
          - Download this file or git clone this repository .
          - Open this file on code editer as you like .
-         - type composer install
-         - run npm install axios@latest --save-dev
+         - Type composer install
+         - Run npm install axios@latest --save-dev
          - Install npm and xmapp OR use your local environment .
          - Open apache server and sql .
          - Then run this command ' php artisan serve '
-         - if you want to know whether your project has vulnerabilities or not
+         - If you want to know whether your project has vulnerabilities or not
              please run npm audit
-- if you have problems , please visit to laravel official website https://laravel.com/docs/10.x/routing
+- If you have problems , please visit to laravel official website https://laravel.com/docs/10.x/routing
 - Good luck for your try.😊😊😊😊😊😊😊
