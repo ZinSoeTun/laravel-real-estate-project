@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->integer('house_id');
             $table->integer('agent_id');
+            $table->integer('user_id')->nullable();
             $table->string('discover');
             $table->string('title');
             $table->string('type');
             $table->string('location');
-            $table->string('price');
             $table->integer('bedrooms');
             $table->integer('bathrooms');
             $table->integer('garages');

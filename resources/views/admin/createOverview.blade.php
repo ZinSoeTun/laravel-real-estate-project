@@ -90,7 +90,7 @@
                                         *{{ $message }}
                                     </div>
                                 @enderror
-                            </div>
+                                </div>
                             {{-- bedroom --}}
                             <div class="form-group mb-3">
                                 <label for="" class="form-label">Bedroom:</label>

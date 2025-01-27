@@ -168,7 +168,7 @@
                                             Detail
                                         </button>
                                     </a>
-                                    <h5 class="text-primary mb-3">{{ $houseData->housePrice }}</h5>
+                                    <h5 class="text-primary mb-3">$ {{ $houseData->housePrice }}</h5>
                                     <h5 class="text-primary">{{ $houseData->title }}</h5>
                                     <h5 class="text-secondary">
                                         <i class="fa-solid fa-location-dot text-warning like"></i>

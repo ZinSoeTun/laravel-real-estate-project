@@ -11,6 +11,7 @@ class Overview extends Model
     protected $fillable = [
     'house_id',
     'agent_id',
+    'user_id',
     'discover',
     'title' ,
     'type' ,
@@ -19,8 +20,7 @@ class Overview extends Model
     'bathrooms',
     'garages' ,
     'sqft' ,
-    'description',
-    'image'
+    'description'
 ];
 
 

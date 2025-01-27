@@ -21,13 +21,22 @@ class OverviewController extends Controller
       // house overview create url
       public function overview(Request $request)
       {
+          //dd($request->toArray());
          //recall back vali function for validation
          $this->vali($request);
          //recall back dataArrange function for data arranging
          $data = $this->dataArrange($request);
-          //house overview creating in Database
-          Overview::create($data);
-         return back()->with(['success' => 'Overview data inserting process is finished!']);
+           //dd($data);
+
+         try {
+            Overview::create($data);
+            return back()->with(['success' => 'Overview data inserting process is finished!']);
+        } catch (\Exception $e) {
+            return back()->with(['error' => $e->getMessage()]);
+        }
+        //   //house overview creating in Database
+        //   Overview::create($data);
+        //  return back()->with(['success' => 'Overview data inserting process is finished!']);
      }
      // house overview list
      public function listOv()
@@ -107,19 +116,13 @@ class OverviewController extends Controller
             'description' =>   $request->houseDescription
         ];
     }
-       //private function for data arrange
-       private function dataArrange2($request)
-       {
-           return [
-            'price' => $request->price
-           ];
-       }
+
     //private function for validation edit
     private function vali($request)
     {
         $rules = [
-            'houseId' => ' string',
-            'agentId' => '  string',
+            'houseId' => 'required | string',
+            'agentId' => 'required |  string',
             'discover' => 'required |  string',
             'title' => 'required |  string',
             'type' => 'required | string',
@@ -129,7 +132,6 @@ class OverviewController extends Controller
             'garage' => 'required |  numeric',
             'sqft' => 'required |  string',
            'houseDescription' => 'required | string',
-           'price' =>  'required | string',
            'houseImg.*'=>'required |image |  mimes:png,jpg,jpeg'
         ];
 
