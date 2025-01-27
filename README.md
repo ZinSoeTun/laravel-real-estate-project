@@ -14,7 +14,11 @@
 - If you want to run this file,  you first
      - Download this file or git clone this repository .
      - Open this file on code editer as you like .
-     - Type composer install
+     - Type 'composer install'
+     - Create .env in root directory and copy all the codes from .env.example to .env file
+     - Type 'php artisan key:generate'
+     - Type 'php artisan migrate'
+     - Type 'php artisan storage:link'
      - If a patched version is released https://www.npmjs.com/package/axios ,
            run npm install axios@latest --save-dev
      - Install npm and xmapp OR use your local environment .
