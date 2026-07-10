@@ -9,7 +9,6 @@ use App\Http\Controllers\HouseController;
 use App\Http\Controllers\OverviewController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HouseImagesController;
-use App\Http\Controllers\LikeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,10 +35,6 @@ Route::get('/townhouse', [HomeController::class, 'townhouse'])->name('townhouse'
 Route::get('/penthouse', [HomeController::class, 'penthouse'])->name('penthouse');
 //retail Url
 Route::get('/retail', [HomeController::class, 'retail'])->name('retail');
-//like Url
-Route::get('/like/{id}', [HomeController::class, 'like'])->name('like');
-//unlike Url
-Route::get('/dislike/{id}', [HomeController::class, 'dislike'])->name('dislike');
 //house detail Url
 Route::get('/house/detail/{id}', [HomeController::class, 'detail'])->name('house.detail');
 //search query Url
@@ -58,6 +53,10 @@ Route::middleware([
     Route::middleware(['prevent-back-history'])->group(function () {
         //user middle
         Route::middleware(['user'])->group(function () {
+            //like Url
+            Route::post('/like/{id}', [HomeController::class, 'like'])->name('like');
+            //unlike Url
+            Route::post('/dislike/{id}', [HomeController::class, 'dislike'])->name('dislike');
             //user URLs
             Route::prefix('users/')->group(function () {
                 //profile
