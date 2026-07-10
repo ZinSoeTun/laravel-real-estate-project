@@ -25,5 +25,15 @@
      - Open apache server and sql  OR use other ways you like.
      - To check any vulnerabilities is existed or not please run npm audit
      - Then run this commands   ' php artisan serve '
+- ## 🤝 Contributing
+
+We welcome contributors to help improve this project, especially with updating dependencies and fixing security vulnerabilities!
+
+### Guidelines:
+1. **Do not push directly to `main` branch.**
+2. Fork the repository and create your branch from `main`.
+3. If you are fixing security issues (like Vite, Laravel, or npm vulnerabilities), please ensure all tests pass.
+4. Open a **Pull Request (PR)** with a clear description of your changes.
+
 - If you have problems , please visit to laravel official website https://laravel.com/docs/10.x/routing
 - Good luck for your try.😊😊😊😊😊😊😊
