@@ -1,3 +1,6 @@
+![GitHub Contributors](https://img.shields.io/github/contributors/ZinSoeTun/laravel-real-estate-project)
+![GitHub Issues](https://img.shields.io/github/issues/ZinSoeTun/laravel-real-estate-project)
+
 - This file is laravel-real-estate-project
 - Language uses
         - HTML CSS BOOTSTRAP LARAVEL BLADE
