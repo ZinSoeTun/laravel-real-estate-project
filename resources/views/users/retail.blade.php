@@ -48,21 +48,7 @@
                                     @if ($houseData->id == $houseData->houseId)
                                         <input type="hidden" id="image" value="{{ $houseData->houseImg }}">
                                     @endif
-                                    @if (Auth::user())
-                                    @if (Auth::user()->id == $houseData->user_id)
-                                    <a href="{{route('dislike',$houseData->id)}}">
-                                        <i class='fas fa-heart text-danger fs-4'></i>
-                                      </a>
-                                    @elseif ($houseData->user_id == 0)
-                                    <a href="{{route('like',$houseData->id)}}">
-                                        <i class='far fa-heart fs-4'></i>
-                                      </a>
-                                      @else
-                                      <a href="{{route('like',$houseData->id)}}">
-                                        <i class='far fa-heart fs-4'></i>
-                                      </a>
-                                    @endif
-                                    @endif
+                                    @include('users.partials.like-button')
                                     <a href="{{ route('house.detail', $houseData->id) }}">
                                         <button class="btn btn-success float-end">
                                             Detail

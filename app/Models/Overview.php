@@ -11,7 +11,6 @@ class Overview extends Model
     protected $fillable = [
     'house_id',
     'agent_id',
-    'user_id',
     'discover',
     'title' ,
     'type' ,
@@ -23,6 +22,9 @@ class Overview extends Model
     'description'
 ];
 
-
+    public function likes()
+    {
+        return $this->hasMany(Like::class);
+    }
 
 }
