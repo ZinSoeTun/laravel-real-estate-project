@@ -46,3 +46,10 @@ This project was built during my junior developer days, and I am now opening it 
 4. Open a **Pull Request (PR)** with a clear description of your changes.
 
 Thank you for making this project better!
+
+
+
+## ✨ Contributors
+
+A huge thank you to these amazing developers for helping improve this project:
+-(https://github.com/AungMinKo-tech) - refactor:admin_controller_with_repo_and_form_request
