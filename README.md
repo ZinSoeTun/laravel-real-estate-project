@@ -45,7 +45,7 @@ This project was built during my junior developer days, and I am now opening it 
 3. Fork this repository and create your feature branch.
 4. Open a **Pull Request (PR)** with a clear description of your changes.
 
-Thank you for making this project better!
+Thank you for making this project better! 
 
 
 ## ✨ Contributors
