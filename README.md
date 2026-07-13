@@ -52,4 +52,5 @@ Thank you for making this project better!
 ## ✨ Contributors
 
 A huge thank you to these amazing developers for helping improve this project:
+
 -(https://github.com/AungMinKo-tech) - refactor:admin_controller_with_repo_and_form_request
