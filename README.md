@@ -46,3 +46,9 @@ This project was built during my junior developer days, and I am now opening it 
 4. Open a **Pull Request (PR)** with a clear description of your changes.
 
 Thank you for making this project better!
+
+
+## ✨ Contributors
+
+<!-- readme-contributors - start -->
+<!-- readme-contributors - end -->
