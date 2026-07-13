@@ -43,7 +43,7 @@ This project was built during my junior developer days, and I am now opening it 
 1. **Do not push directly to the `main` branch.** (Branch protection is enabled).
 2. Look at the open **Issues** to see what needs fixing or upgrading.
 3. Fork this repository and create your feature branch.
-4. Open a **Pull Request (PR)** with a clear description of your changes.
+4. Open a **Pull Request (PR)** with a clear description of your changes. 
 
 Thank you for making this project better!
 
